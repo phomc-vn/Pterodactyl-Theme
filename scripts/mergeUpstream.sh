@@ -10,7 +10,7 @@ function update {
     git add $1
 }
 
-update BungeeCord
+update panel
 
 # Update submodules
 git submodule update --recursive
