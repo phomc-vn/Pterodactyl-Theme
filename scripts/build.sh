@@ -3,5 +3,7 @@
 git submodule update --init && ./scripts/applyPatches.sh || exit 1
 
 if [ "$1" == "--jar" ]; then
-     mvn clean package
+    cd panel-fork || exit 1
+    zip -r ../builds/panel-fork-$(date +"%Y%m%d%H%M%S").zip *
+    cd ..
 fi
