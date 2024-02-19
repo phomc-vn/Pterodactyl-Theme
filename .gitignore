@@ -194,10 +194,10 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 
-### Waterfall Extras ###
+### Pterodactyl Extras ###
 panel-fork/
 run/
-
+builds/
 # Because Github lost their minds
 .idea/
 *.iml
