@@ -10,6 +10,6 @@ if [ "$1" == "--jar" ]; then
     
     # Zip contents of panel-fork folder and move to builds folder
     cd panel-fork || exit 1
-    zip -r ../builds/panel-fork-$(date +"%Y%m%d%H%M%S").zip *
+    tar czf ../builds/panel-fork-$(date +"%Y%m%d%H%M%S").tar.gz *
     cd ..
 fi
